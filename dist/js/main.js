@@ -1,10 +1,10 @@
 // Select DOM Items
-const menuBtn = document.querySelector(".btn-menu");
+const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 //since more than one nav item, need to use qSA
-const navItem = document.querySelectorAll(".nav-items");
+const navItems = document.querySelectorAll(".nav-item");
 
 // Set Initial State of Menu
 let showMenu = false;
@@ -26,5 +26,14 @@ function toggleMenu() {
     showMenu = true;
   } else {
     // Want to do opposite of above for if the menu is shown
+    menuBtn.classList.remove("close");
+    menu.classList.remove("show");
+    menuNav.classList.remove("show");
+    menuBranding.classList.remove("show");
+    // With navItems, since more than 1, need to loop through
+    navItems.forEach(item => item.classList.remove("show"));
+
+    // Set the menu state
+    showMenu = false;
   }
 }

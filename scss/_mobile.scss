@@ -1,10 +1,16 @@
-// Where we'll use those media query mixins
+// Where we'll use those media query mixins / everything responsive
 
 // Widescreens
 @include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 // Desktops & Laptops
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 //Tablets & Small Laptops
 @include mediaMd {
@@ -57,11 +63,19 @@
 
     grid-template-columns: 1fr;
   }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 // Smartphones
 @include mediaSm {
   //make so if screen is shorter - name block (home header) is always 10vh from the top
   main#home h1 {
     margin-top: 10vh;
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

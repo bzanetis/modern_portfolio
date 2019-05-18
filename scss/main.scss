@@ -10,7 +10,8 @@
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  // using color func in config to make sure text changes to black if bckgrnd gets set to a light color
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

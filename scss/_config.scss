@@ -5,6 +5,7 @@ $home-image: url(../img/marfa1.JPG);
 $background-opacity: 0.6;
 
 //basically a func to that can be called to trigger transition. See line 66 for how used. ..now anytime want to add a transition, can use this mixin
+// IF you want to return something (i.e. a color, like below) you MUST write a func rather than a mixin
 @mixin easeOut {
   transition: all 0.8s ease-out;
 }
@@ -28,6 +29,15 @@ $background-opacity: 0.6;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
   }
 }
 

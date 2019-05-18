@@ -12,7 +12,8 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    // using that color func in config here as well
+    background: set-text-color($primary-color);
     @include easeOut();
   }
 
@@ -122,7 +123,8 @@
     // 1 rem on top & bottom, 0 left & right
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    // using that color func in config here as well
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 

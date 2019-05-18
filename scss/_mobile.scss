@@ -45,6 +45,18 @@
       height: 150px;
     }
   }
+
+  .about-info {
+    // Maps out what you want/where you want it
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  }
 }
 // Smartphones
 @include mediaSm {

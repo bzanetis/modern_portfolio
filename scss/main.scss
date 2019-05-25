@@ -97,6 +97,12 @@ main {
     border: $secondary-color 3px solid;
   }
 
+  .sm-bio-img {
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+
   .bio {
     grid-area: bio;
     font-size: 1.5rem;

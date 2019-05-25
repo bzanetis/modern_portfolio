@@ -170,6 +170,10 @@ main {
     margin: auto;
     border-radius: 50%;
     border: #2bafb6 3px solid; }
+  .about-info .sm-bio-img {
+    margin: auto;
+    border-radius: 50%;
+    border: #2bafb6 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }

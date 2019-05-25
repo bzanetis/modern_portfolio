@@ -1,12 +1,12 @@
 {
-  "name": "portfolio-01",
+  "name": "modern-portfolio",
   "version": "1.0.0",
   "description": "responsive portfolio website",
   "main": "index.js",
   "homepage": "https://bzanetis.github.io/modern_portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d /dist"
   },
   "author": "Britt Zanetis",
   "license": "MIT",

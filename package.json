@@ -4,19 +4,21 @@
   "description": "responsive portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bzanetis/portfolio-01.git"
+    "url": "git+https://github.com/bzanetis/modern_portfolio.git"
   },
   "author": "Britt Zanetis",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bzanetis/portfolio-01/issues"
   },
-  "homepage": "https://github.com/bzanetis/portfolio-01#readme",
+  "homepage": "https://bzanetis.github.io/modern_portfolio",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"
   }
 }

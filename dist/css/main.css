@@ -187,26 +187,42 @@ main {
 .projects {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4";
+  grid-template-areas: "img item1 item1" "img item2 item2" "img item3 item3" "iframe item4 item4";
   grid-template-columns: repeat(3, 1fr); }
   .projects .item1 {
     grid-area: item1;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 4; }
+  .projects .img-1 {
+    grid-area: img;
+    grid-column-start: 1;
+    grid-column-end: 2; }
   .projects .item2 {
     grid-area: item2;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 4; }
+  .projects .img-2 {
+    grid-area: img;
+    grid-column-start: 1;
+    grid-column-end: 2; }
   .projects .item3 {
     grid-area: item3;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 4; }
+  .projects .img-3 {
+    grid-area: img;
+    grid-column-start: 1;
+    grid-column-end: 2; }
   .projects .item4 {
     grid-area: item4;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 4; }
+  .projects iframe {
+    grid-area: iframe;
+    grid-column-start: 1;
+    grid-column-end: 2; }
   .projects img {
-    width: 25%;
+    width: 85%;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;

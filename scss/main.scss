@@ -123,12 +123,46 @@ main {
 // Work/Projects
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
-  //by default make 3 images (fractionals) across
+
+  grid-gap: 30px;
+  grid-template-areas:
+    "item1 item1 item1"
+    "item2 item2 item2"
+    "item3 item3 item3"
+    "item4 item4 item4";
+
   grid-template-columns: repeat(3, 1fr);
+  // grid-gap: 0.7rem;
+
+  // //by default make 3 images (fractionals) across
+  // grid-template-rows: repeat(1, 1fr);
+
+  .item1 {
+    grid-area: item1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .item2 {
+    grid-area: item2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .item3 {
+    grid-area: item3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .item4 {
+    grid-area: item4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 
   img {
-    width: 100%;
+    width: 25%;
     border: 3px #fff solid;
 
     &:hover {
@@ -136,6 +170,11 @@ main {
       border-color: $secondary-color;
       @include easeOut;
     }
+  }
+
+  #tech {
+    font-weight: bold;
+    font-size: small;
   }
 }
 

@@ -186,15 +186,35 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 30px;
+  grid-template-areas: "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4";
   grid-template-columns: repeat(3, 1fr); }
+  .projects .item1 {
+    grid-area: item1;
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  .projects .item2 {
+    grid-area: item2;
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  .projects .item3 {
+    grid-area: item3;
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  .projects .item4 {
+    grid-area: item4;
+    grid-column-start: 1;
+    grid-column-end: 4; }
   .projects img {
-    width: 100%;
+    width: 25%;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #2bafb6;
       transition: all 0.8s ease-out; }
+  .projects #tech {
+    font-weight: bold;
+    font-size: small; }
 
 .boxes {
   display: flex;

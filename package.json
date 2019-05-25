@@ -6,17 +6,10 @@
   "homepage": "https://bzanetis.github.io/modern_portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bzanetis/modern_portfolio.git"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Britt Zanetis",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bzanetis/portfolio-01/issues"
-  },
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"

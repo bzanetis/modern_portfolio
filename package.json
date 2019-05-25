@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bzanetis/modern_portfolio.git"
+    "url": "https://github.com/bzanetis/modern_portfolio.git"
   },
   "author": "Britt Zanetis",
   "license": "MIT",

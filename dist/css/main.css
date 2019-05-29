@@ -228,10 +228,6 @@ main {
   .projects img {
     width: 85%;
     border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #2bafb6;
-      transition: all 0.8s ease-out; }
   .projects #tech {
     font-weight: bold;
     font-size: small; }

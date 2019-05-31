@@ -130,11 +130,58 @@ main {
 //many adjustments made to acocmodate work2 orientation, added img classes and utilized grid-template-areas set-up from about me
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
 
-  //by default make 3 images (fractionals) across
-  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  grid-template-areas:
+    "img item1 item1"
+    "img item2 item2"
+    "img item3 item3"
+    "iframe item4 item4";
 
+  grid-template-columns: repeat(3, 1fr);
+  // grid-gap: 0.7rem;
+
+  // //by default make 3 images (fractionals) across
+  // grid-template-rows: repeat(1, 1fr);
+
+  .item1 {
+    grid-area: item1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .img-1 {
+    grid-area: img;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .item2 {
+    grid-area: item2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .img-2 {
+    grid-area: img;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .item3 {
+    grid-area: item3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .img-3 {
+    grid-area: img;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .item4 {
+    grid-area: item4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
   iframe {
     grid-area: iframe;
     grid-column-start: 1;
@@ -146,11 +193,11 @@ main {
 
     border: 3px #fff solid;
 
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
+    // &:hover {
+    //   opacity: 0.5;
+    //   border-color: $secondary-color;
+    //   @include easeOut;
+    // }
   }
 
   #tech {

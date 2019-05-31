@@ -5,10 +5,11 @@ h3 {
   margin: 0;
   font-weight: 400;
 
-  .project-lg-heading {
+  &.project-lg-heading {
     font-size: 6rem;
   }
-  .project-sm-heading {
+
+  &.project-sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
@@ -28,16 +29,16 @@ h3 {
     margin: auto;
     width: 375px;
     height: 325px;
-    border-radius: 50%;
+
     border: $secondary-color 3px solid;
   }
 
   .project-bio-image1 {
-    grid-area: bioimage;
+    grid-area: bioimage1;
     margin: auto;
     width: 375px;
     height: 325px;
-    border-radius: 50%;
+
     border: $secondary-color 3px solid;
   }
 
@@ -47,6 +48,16 @@ h3 {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border: $secondary-color 3px solid;
-    border-top: $secondary-color 1px solid;
   }
 }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+}
+
+// Needs to be at the bottom so that media queries load after initial CSS
+@import "mobile";

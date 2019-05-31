@@ -133,7 +133,7 @@ main {
   grid-gap: 0.7rem;
 
   //by default make 3 images (fractionals) across
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   iframe {
     grid-area: iframe;
@@ -142,8 +142,8 @@ main {
   }
 
   img {
-    width: 85%;
-
+    width: 320px;
+    height: 225px;
     border: 3px #fff solid;
 
     &:hover {

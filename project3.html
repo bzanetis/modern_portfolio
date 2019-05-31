@@ -11,9 +11,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Welcome To My Portfolio</title>
+    <title>About Me</title>
   </head>
-  <body id="bg-img">
+  <body>
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -27,12 +27,12 @@
         </div>
 
         <ul class="menu-nav">
-          <li class="nav-item current">
+          <li class="nav-item">
             <a href="index.html" class="nav-link">
               Home
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item current">
             <a href="about.html" class="nav-link">
               About Me
             </a>
@@ -51,26 +51,30 @@
       </nav>
     </header>
 
-    <main id="home">
-      <h1 class="lg-heading">
-        Britt <span class="text-home-color">Zanetis</span>
-      </h1>
-      <h2 class="sm-heading">
-        Software Engineer, Developer & Video Editor.
-      </h2>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/britt-z/">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://github.com/bzanetis">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class=""></i>
-        </a>
-      </div>
-    </main>
+    <main id="about">
+      <h1 class="project-lg-heading">BetaCritic </h1>
+      <h2 class="project-sm-heading">Single-Page Movie Review Application</h2>
+      <div class="project-about-info">
+        <img
+          class="project-bio-image"
+          src="img/fec.jpg"
+          alt="Britt Zanetis"
+        />
+        <div class="project-bio">
+          <h3 class="text-secondary"></h3>
+          <p>
+            BetaCritic provided me with the opportunity to work on a distributed team of four software engineers. Our primary goal was to recreate MetaCritic, with a focus on front end design. I created a dynamically-rendering application that included film credits/details linked to MetaCritic endpoints. I implemented a robust test suite with Jest and Enzyme resulting in consistent application performance. The team collaborated with one another during the process of building proxy servers to host multiple components.
+            
+          </p>
+          <p>
+            The tech stack I utilized for this project included React, CSS, MongoDB, Express, Node.js, and Webpack. BetaCritic was deployed via AWS Elastic Beanstalk and MongoDB Atlas.
+          </p>
+        </div>
 
+    </main>
+    <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
